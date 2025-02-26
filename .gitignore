@@ -1,0 +1,35 @@
+# Ignore environment variables and secrets
+.env
+.env.*
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignore compiled code
+*.so
+*.out
+*.o
+
+# Ignore archives
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore VS Code settings (optional)
+.vscode/

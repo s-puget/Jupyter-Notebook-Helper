@@ -1,43 +1,39 @@
-# 📝 Jupyter Notebook Processor  
+# 📝 Jupyter Notebook Helper
 
-## 📌 Overview  
-Jupyter Notebook Processor is a Python-based AI-powered tool that helps users:  
-- **Summarize** Jupyter Notebooks 📄  
-- **Clean & Improve** Notebook Code 🛠️  
-- **Modularize** Notebooks into a Structured Python Project 📂  
+Hi! Welcome to my Jupyter Notebook Helper project.  
+As I often work with Jupyter notebooks, I created this project to leverage LLMs to help with some repetitive tasks I frequently encounter (after experimenting with ChatGPT). For instance:  
 
-This project leverages OpenAI's GPT-4o to enhance code quality and structure notebooks effectively. It includes a **Gradio UI** for easy interaction.  
+- 🗂️ **Summarizing** the content of a notebook  
+- 🧹 **Cleaning** a notebook: if a notebook is messy, generate a draft of a cleaned-up version  
+- 🛠️ **Modularizing**: when it makes sense, convert a notebook into a draft of a structured Python project  
 
----
+## 🚀 Project Description
 
-## 🚀 Features  
-✅ **Summarization** – Extracts key points and provides an AI-generated summary of the notebook.  
-✅ **Code Cleaning** – Refactors, optimizes, and organizes Jupyter notebook code.  
-✅ **Modularization** – Converts notebook cells into a structured Python project with multiple files.  
-✅ **User-Friendly UI** – A simple web-based interface powered by **Gradio**.  
+The Jupyter Notebook Helper is built around a modular Python backend that leverages OpenAI’s GPT models to process notebooks. Notebooks are parsed into markdown and code cells, converted into text for AI processing, and then transformed based on the selected task.  
 
----
+Processed notebooks can be regenerated as cleaned notebooks or structured Python projects. Modularized projects are created from a dictionary mapping file paths to content, with directories and files automatically generated and packaged as a zip.  
 
-## 🔧 Installation  
+The Gradio frontend provides an interactive web interface for uploading notebooks, running processing functions, and downloading results. The code is designed for clarity, modularity, and easy extension for additional notebook-related tasks.
 
-### 1️⃣ **Clone the Repository**  
-```bash
-git clone https://github.com/your-username/jupyter-processor.git
+
+## ⚙️ Running the project
+
+### 1️⃣ Clone the Repository
+```
+git clone https://github.com/your-username/jupyter-processor.git  
 cd jupyter-processor
 ```
+
 ### 2️⃣ Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-### 3️ Set Up OpenAI API Key
-Create a `.env` file in the project root and add your API key:
-```bash
-API_KEY=your_openai_api_key_here
-```
+`pip install -r requirements.txt`
+
+### 3️⃣ Set Up OpenAI API Key
+Create a .env file in the project root and add your API key:  
+`API_KEY=your_openai_api_key_here`
 
 ## ▶️ Usage
-Run the Gradio Web App
-```bash
-python src/main.py
-```
-Then click on the link to use app in browser.
+
+Run the Gradio Web App:  
+`python src/main.py`
+
+Then click on the link to use the app in your browser 🌐.  
